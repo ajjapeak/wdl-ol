@@ -55,7 +55,7 @@ void IParam::InitDouble(const char* name, double defaultVal, double minVal, doub
   {
     ;
   }
-  
+
   SetShape(shape);
 }
 

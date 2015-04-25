@@ -26,7 +26,7 @@ public:
 
   virtual ~IControl() {}
 
-  void ChangeParam(int paramIdx) { mParamIdx = paramIdx; }
+    void ChangeParam(int paramIdx) { mParamIdx = paramIdx; }
     
   virtual void OnMouseDown(int x, int y, IMouseMod* pMod);
   virtual void OnMouseUp(int x, int y, IMouseMod* pMod) {}

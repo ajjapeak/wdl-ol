@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 44;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -442,10 +442,11 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = NO;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Steinberg;
 			};
 			buildConfigurationList = 1DEB91EF08733DB70010E9CD /* Build configuration list for PBXProject "base" */;
-			compatibilityVersion = "Xcode 3.0";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -526,6 +527,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA70847158B454300BFC572 /* common.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -533,7 +536,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA70847158B454300BFC572 /* common.xcconfig */;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_POSTPROCESSING = NO;
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};
@@ -541,8 +546,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA70847158B454300BFC572 /* common.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
 				GCC_MODEL_TUNING = G5;
@@ -551,12 +555,13 @@
 					"DEVELOPMENT=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = "$(COMPILER)";
 				GENERATE_PKGINFO_FILE = YES;
 				HEADER_SEARCH_PATHS = ../../;
 				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_NAME = base;
-				SDKROOT = "$(BASE_SDK)";
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -564,8 +569,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA70847158B454300BFC572 /* common.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_64_BIT_PRE_XCODE_3_1 = "x86_64 i386 ppc";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_INLINES_ARE_PRIVATE_EXTERN = YES;
@@ -575,12 +579,13 @@
 					"RELEASE=1",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_VERSION = "$(COMPILER)";
 				GENERATE_PKGINFO_FILE = YES;
 				HEADER_SEARCH_PATHS = ../../;
 				MACOSX_DEPLOYMENT_TARGET = "$(MACOSX_DEPLOYMENT_TARGET)";
 				PRODUCT_NAME = base;
-				SDKROOT = "$(BASE_SDK)";
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};
@@ -588,9 +593,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA70847158B454300BFC572 /* common.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				PRODUCT_NAME = base32;
+				SDKROOT = macosx10.9;
 			};
 			name = Debug;
 		};
@@ -598,10 +604,11 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4FA70847158B454300BFC572 /* common.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1)";
-				ARCHS_STANDARD_32_BIT_PRE_XCODE_3_1 = "ppc i386";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				DEPLOYMENT_POSTPROCESSING = NO;
 				PRODUCT_NAME = base32;
+				SDKROOT = macosx10.9;
 			};
 			name = Release;
 		};
